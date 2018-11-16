@@ -1,0 +1,22 @@
+#!/bin/bash
+##script to ssh into switches in stores
+##
+
+##get store IP
+read -p "enter the store's IP address ie. 172.168.0: " IPADDR
+echo "ping all switches in $IPADDR "
+
+
+##ping range of online store silently
+
+#comrang = (201 202 203 204 205 206 207 208 209)
+
+for i in IPADDR; do
+nice -n -17 ping -c $IPADDR.comrang[@];
+done
+
+##return online store list
+
+##give a case for commands to run
+
+##ask if to open new terminals

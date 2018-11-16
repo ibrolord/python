@@ -1,0 +1,16 @@
+bir = {'Alice': 'Apr 1', 'Bob': 'Jan 12', 'Carol': 'Mar 4'}
+
+while True:
+	print('ENter a name: (blank to quit)')
+	name = input()
+	if name == '':
+		break
+	
+	if name in bir:
+		print(birthdays[name] + ' is the birthday of ' + name)
+	else:
+		print('I dont birthday info for ' + name)
+		print('What is their birthday')
+		bd = input()
+		bir[name] = bd
+		print('Bday db updated')

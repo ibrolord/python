@@ -1,0 +1,12 @@
+spam = ['apples', 'bananas', 'tofu', 'cats']
+
+def fn(lis):
+	for i in range(len(lis)):
+		print(lis[i] + ', ', end="")
+		if lis[i] == lis[-2]:
+			print('and ' + lis[-1], end="")
+			break
+
+	
+spam = ['apples', 'bananas', 'tofu', 'cats']
+fn(spam)
